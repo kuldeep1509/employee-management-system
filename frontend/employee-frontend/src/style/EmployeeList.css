@@ -1,0 +1,64 @@
+/* Updated EmployeeList.css - AquaMist Theme */
+
+.employee-page {
+  background: linear-gradient(135deg, #e2f3f7, #f1faff);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1e2a38;
+}
+
+.employee-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0a88dd;
+  
+  margin-bottom: 2rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0 12px 35px rgba(8, 139, 214, 0.3);
+}
+
+.search-bar input {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1e2a38;
+}
+
+.search-bar input::placeholder {
+  color: #6c757d;
+}
+
+.add-btn {
+  background-color: #088bd6;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(13, 202, 240, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+  background-color: #0dcaf0;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.5);
+}
+
+.recharts-cartesian-grid line {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.recharts-tooltip-label {
+  color: #088bd6 !important;
+}

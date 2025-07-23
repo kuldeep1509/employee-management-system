@@ -1,0 +1,68 @@
+/* TaskList.css — AquaMist Theme Upgrade */
+
+.task-page {
+  background: linear-gradient(135deg, #e2f3f7, #f1faff);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1e2a38;
+}
+
+.back-btn {
+  margin-bottom: 1.5rem;
+  border: 1px solid #088bd6;
+  color: #088bd6;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0dcaf0;
+  color: white;
+  box-shadow: 0 0 8px rgba(13, 202, 240, 0.5);
+}
+
+.task-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #088bd6;
+  
+  margin-bottom: 1rem;
+}
+
+.task-search-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-search {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.task-search input {
+  color: #1e2a38;
+}
+
+.task-search input::placeholder {
+  color: #6c757d;
+}
+
+.task-add-btn {
+  background-color: #088bd6;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(13, 202, 240, 0.3);
+  transition: 0.3s ease;
+}
+
+.task-add-btn:hover {
+  background-color: #0dcaf0;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.5);
+}

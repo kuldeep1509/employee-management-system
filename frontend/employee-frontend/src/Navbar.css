@@ -1,0 +1,54 @@
+/* Navbar.css */
+.glass-navbar {
+  background: rgba(8, 139, 214, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgb(253, 253, 253);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 12px 12px;
+}
+
+.brand-glow {
+  
+  text-shadow: 0 0 10px #0dcaf0, 0 0 20px #0dcaf0;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.brand-glow:hover {
+  color: #fff;
+  text-shadow: 0 0 15px #fff, 0 0 25px #e2f3f7;
+  transform: scale(1.05);
+}
+
+#one{
+    color: rgb(255, 255, 255);
+}
+
+.cool-link {
+  color: #fff !important;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cool-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #0dcaf0;
+  transition: width 0.4s ease;
+}
+
+.cool-link:hover::after,
+.cool-link.active::after {
+  width: 100%;
+}
+
+.cool-link:hover {
+  color: #262727 !important;
+  transform: translateY(-2px);
+}
