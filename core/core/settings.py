@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
+#postgresql://employee_db_6cwh_user:YCI95kHSkdwP5E8Xcmr18tx6MBbrZ8w4@dpg-d20c88vdiees739c13g0-a.oregon-postgres.render.com/employee_db_6cwh
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
