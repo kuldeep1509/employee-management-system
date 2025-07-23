@@ -62,7 +62,8 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://employee-management-system-78wcj85o4-kuldeeps-projects-d69e0562.vercel.app/"
 ]
 
 ROOT_URLCONF = 'core.urls'
