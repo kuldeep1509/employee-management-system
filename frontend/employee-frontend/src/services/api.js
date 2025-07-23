@@ -1,7 +1,11 @@
 // src/services/api.js
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api/'; // Your Django backend URL
+// Use the environment variable for the backend URL
+// During local development, process.env.REACT_APP_BACKEND_URL will be
+// whatever you set in your local .env file (e.g., http://localhost:8000)
+// During deployment on Vercel/Netlify, it will be the URL you set in their UI
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -26,4 +30,3 @@ export const getTaskStatuses = () => api.get('task-statuses/');
 export const getUsers = () => api.get('users/'); // To fetch users for 'assigned_by'
 
 export default api;
-
