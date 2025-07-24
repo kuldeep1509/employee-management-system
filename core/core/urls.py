@@ -15,11 +15,11 @@ def api_root(request):
     })
 
 def favicon_view(request):
-    return HttpResponse(status=204) #postgresql://employee_db_l1xe_user:NfUWWQY8fpQNG5dw3brvDMfC8SbsJNMn@dpg-d20dnqmuk2gs73c65tn0-a.oregon-postgres.render.com/employee_db_l1xe
+    return HttpResponse(status=204) # 204 No Content
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('employees.urls')),
-    path('', api_root),
-    path('favicon.ico', favicon_view),
+    path('', api_root),          # Handles requests to the root URL "/"
+    path('favicon.ico', favicon_view), # Handles requests for /favicon.ico
 ]
