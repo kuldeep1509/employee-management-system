@@ -28,7 +28,8 @@ SECRET_KEY = 'django-insecure-ga4d)cspyx#qits4*7--7#seg!@(ct6p1(-1bt48y3nu3%yt@m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+# core/settings.py
+ALLOWED_HOSTS = ['.vercel.app'] 
 
 
 # Application definition
