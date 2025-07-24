@@ -60,7 +60,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://employee-management-system-ways-e7f3x6i98.vercel.app/',
     
 ]
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 ROOT_URLCONF = 'core.urls'
