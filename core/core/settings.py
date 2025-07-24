@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-ga4d)cspyx#qits4*7--7#seg!@(ct6p1(-1bt48y3nu3%yt@m
 DEBUG = True
 
 # core/settings.py
-ALLOWED_HOSTS = ['.vercel.app', 'localhost'] 
+ALLOWED_HOSTS = ['.vercel.app', 'localhost','employee-management-system-1ahj.onrender.com'] 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
@@ -58,6 +58,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     
     "https://employee-management-system-ways.vercel.app",
+    
     
 ]
 CORS_ALLOW_ALL_ORIGINS = True
