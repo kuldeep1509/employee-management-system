@@ -2,11 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "core/cwsgi.py",
+      "src": "core/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
+        "runtime": "python3.13"
       }
     }
   ],
