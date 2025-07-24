@@ -28,7 +28,7 @@ class TaskSerializer(serializers.ModelSerializer):
     Serializer for Task model.
     Includes nested serializers and custom display fields.
     """
-    status_name = serializers.CharField(source='status.name', read_only=True)
+    status_name = serializers.CharField(source='status.name', read_only=True)#It pulls the value from the related status model's name field (i.e. task.status.name)
     assigned_to_name = serializers.SerializerMethodField()
     assigned_by_name = serializers.SerializerMethodField()
 
@@ -44,7 +44,7 @@ class TaskSerializer(serializers.ModelSerializer):
         read_only_fields = ['created_at', 'updated_at']
 
     def get_assigned_to_name(self, obj):
-        if obj.assigned_to:
+        if obj.assigned_to:#If the task has an assigned employee, this line returns their full name by stitching together first and last name.
             return f"{obj.assigned_to.first_name} {obj.assigned_to.last_name}".strip()
         return None
 

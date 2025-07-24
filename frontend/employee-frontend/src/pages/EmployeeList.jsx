@@ -167,7 +167,7 @@ const EmployeeList = () => {
       variant="outlined"
       value={search}
       onChange={handleSearchChange}
-      sx={{ width: '300px', input: { color: '#fff' }, label: { color: '#ccc' } }}
+      sx={{ width: '300px', input: { color: 'black' }, label: { color: '#ccc' } }}
     />
     <Button
       variant="contained"
