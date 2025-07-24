@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Automatically switch between local dev and deployed backend
-const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const API_BASE_URL = "https://employee-management-system-1ahj.onrender.com/api/";
 ;
 
 const api = axios.create({
