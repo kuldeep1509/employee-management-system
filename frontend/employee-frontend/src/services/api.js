@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 // Automatically switch between local dev and deployed backend
-const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000/api/";
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
+;
 
 const api = axios.create({
   baseURL: API_BASE_URL,
