@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['.vercel.app']
 # Application definition
 #postgresql://employee_db_6cwh_user:YCI95kHSkdwP5E8Xcmr18tx6MBbrZ8w4@dpg-d20c88vdiees739c13g0-a.oregon-postgres.render.com/employee_db_6cwh
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic'
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.security.WhiteNoiseMiddleware'
+    'whitenoise.middleware.security.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
