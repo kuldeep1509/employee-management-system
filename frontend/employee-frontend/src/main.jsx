@@ -5,6 +5,7 @@ import App from './App.jsx';
 import './index.css';
 import { ThemeProvider } from '@mui/material/styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import theme from './themes/theme.js';
