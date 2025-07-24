@@ -4,6 +4,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
 
+#https://employee-management-system-u3d9-ou5oynoi1.vercel.app/
+
 @api_view(['GET'])
 def api_root(request):
     return Response({

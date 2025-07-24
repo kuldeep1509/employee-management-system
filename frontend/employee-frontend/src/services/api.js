@@ -1,11 +1,8 @@
 // src/services/api.js
 import axios from 'axios';
 
-// Use the environment variable for the backend URL
-// During local development, process.env.REACT_APP_BACKEND_URL will be
-// whatever you set in your local .env file (e.g., http://localhost:8000)
-// During deployment on Vercel/Netlify, it will be the URL you set in their UI
-const API_BASE_URL = "http://localhost:8000/api/";
+// Automatically switch between local dev and deployed backend
+const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000/api/";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
