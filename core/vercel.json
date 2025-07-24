@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "core/core/wsgi.py",
+      "src": "core/cwsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
@@ -13,7 +13,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "core/core/wsgi.py"
+      "dest": "core/wsgi.py"
     }
   ],
   "env": {
