@@ -40,7 +40,7 @@ class Task(models.Model):
     description = models.TextField(blank=True, null=True)
 
     status = models.ForeignKey(TaskStatus, on_delete=models.SET_NULL, null=True, blank=True)
-    assigned_to = models.ForeignKey(Employee, on_delete=models.SET_NULL, null=True, blank=True,related_name='tasks')
+    assigned_to = models.ForeignKey(Employee, on_delete=models.SET_NULL, null=True, blank=True,related_name='tasks')#related_name use is  # Gives you all tasks assigned to that employee!
     assigned_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     due_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
