@@ -21,6 +21,7 @@ function App() {
         <Route path="/tasks" element={<TaskList />} />
         <Route path="/tasks/new" element={<TaskForm />} />
         <Route path="/tasks/edit/:id" element={<TaskForm />} />
+        
        
         <Route path="*" element={<Box sx={{ p: 3, textAlign: 'center' }}><h1 style={{ color: 'red' }}>404 - Page Not Found</h1></Box>} />
       </Routes>
